@@ -1,4 +1,4 @@
-import scipy.stats
+iimport scipy.stats
 import streamlit as st
 import time
 
@@ -28,5 +28,14 @@ number_of_trials = st.slider('Number of trials?', 1, 1000, 10)
 start_button = st.button('Run')
 
 if start_button:
+    st.write(f'Running the experient of {number_of_trials} trials.')mport streamlit as st
+
+st.header('Tossing a Coin')
+
+number_of_trials = st.slider('Number of trials?', 1, 1000, 10)
+start_button = st.button('Run')
+
+if start_button:
     st.write(f'Running the experiment of {number_of_trials} trials.')
-    mean = toss_coin(number_of_trials)
+
+st.write('It is not a functional application yet. Under construction.')
